@@ -1,0 +1,47 @@
+REQUERIMIENTOS DEL USUARIO.
+1.	Que posea un método de identificación. 
+2.	Que pueda almacenar la información sobre el dueño de la mascota y la mascota. 
+3.	Guardar historial médico de la mascota 
+4.	Que la información pueda ser accedida por la clínica veterinaria que lo atienda. 
+5.	Que se puedan agendar horas para vacuna y control. 
+6.	Que pueda generar un QR con la información de la mascota. 
+7.	Que se pueda crear un perfil con información previsional de la mascota. 
+8.	Que sea una aplicación móvil.  
+9.	Que logre mostrar la información sin internet 
+10.	Que sea capaz de recibir notificaciones sobre horas agendadas. 
+11.	Que sea capaz de recordar la fecha de la vacuna a realizar de la mascota y notifique sobre ella. 
+REQUERIMIENTOS FUNCIONALES 
+1.	RF-01Inicio de sesión y Registro 
+  1.	El sistema debe permitir el registro del Usuario conformado por Nombre d Usuario, Correo, Rut, Fecha de Nacimiento, Dirección y Contraseña. 
+  2.	El sistema debe permitir el registro de Usuario especial, conformado por Nombre empresa asociada, Nombre veterinario, Rut, Fecha de nacimiento, Dirección, RUT empresa, Nombre empresa. 
+  3.	El registro del usuario especial mencionado en ‘1.2’ está asociado a confirmación o bien se confirmará el rol con la empresa asociada. 
+  4.	El sistema debe permitir en Inicio de sesión de un usuario veterinario cuya creación estará dispuesta por el usuario especial. 
+  5.	Para poder iniciar sesión, el usuario debe ingresar correctamente tanto su Nombre de Usuario como su contraseña. 
+2.	RF-02 Landing Page 
+  1.	El sistema debe presentarse al usuario con una landing page, la cual explique lo que es el sistema. 
+  2.	El sistema debe tener una barra de navegación, la cual contenga Logo del sistema, Inicio, Veterinarias, Servicios, Contacto 
+    A.	Inicio que direccione a la misma landing page. 
+    B.	Veterinarias despliega listado de veterinarias afiliadas al sistema 
+    C.	Servicio entrega la información de los servicios realizados por el sistema. 
+    D.	Contacto entrega la información sobre los contactos de la administración del sistema. 
+  3.	El sistema dentro de la landing debe de tener 2 botones hacia Inicio de Sesión y Registro. 
+3.	RF-03 Perfil Usuario 
+  1.	El sistema debe de poder editar los datos del usuario, tales como nombre de usuario, contraseña y foto de perfil. 
+  2.	El sistema debe otorgar un id único a cada usuario. 
+4.	RF-04 Agregar Mascota 
+  1.	El sistema debe proporcionar la opción de agregar una mascota, se pedirán los datos la mascota como, Nombre y Fecha de Nacimiento. 
+  2.	El sistema debe permitir al usuario veterinario la opción de crear el carnet de la mascota, los datos del carnet corresponden a, Nombre, Fecha de Nacimiento, Sexo, Fecha de las ultimas vacunas y sus respectivos nombres. 
+  3.	El sistema debe limitar los privilegios del usuario respecto al carnet de la mascota, estos permisos deben ser solo de vista. 
+  4.	El sistema una vez haya sido confirmada la creación de la mascota por medio del ‘ii’ debe asignar una Id identificadora unica de la mascota. 
+5.	RF-05: Gestión de Usuario Veterinaria. 
+  1.	El sistema debe poder permitirle al veterinario definir el horario en que se encuentra disponible. 
+    A.	El sistema debe permitir al veterinario marcar las horas como ya atendidas, dejando un registro tanto para el veterinario como al paciente.
+  2.	El sistema debe proporcionar la información tanto de sus pacientes como de sus dueños. 
+  3.	El sistema debe mantener un registro de todos los pacientes que ha atendido. 
+  4.	El sistema debe permitir modificar los datos de carnet de la mascota que este atendiendo 
+  5.	El sistema debe permitir la eliminación de su propio perfil veterinario 
+6.	RF-06:  Gestión de Usuario Administrador 
+  1.	El sistema debe permitir a un usuario administrador la verificación de la identidad de sus funcionarios dependientes 
+  2.	El sistema debe permitir la creación de veterinarios en el sistema. 
+    A.	Función limitada a la dependencia de este usuario especial, solo puede crear funcionarios que este a su cargo 
+    B.	Una vez creado un funcionario, puede ser desvinculado del usuario especial pero no puede ser eliminado. 
